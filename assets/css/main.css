@@ -1767,7 +1767,7 @@ input, select, textarea {
 		header > p {
 			display: block;
 			font-size: 1.5em;
-			margin: 1em 0 2em 0;
+			margin: 1em 5em;
 			line-height: 1.5em;
 			text-align: inherit;
 		}
@@ -3181,3 +3181,57 @@ input, select, textarea {
 	color: rgba(255, 255, 255, 1);
 	background: rgba(0, 0, 0, 0.45);
 }
+
+.glass {
+    background-color: #000000;  /* fallback for old browsers */
+	background-image: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 13%;
+}
+
+.windows {
+	/* background styles */
+	padding: 35px 75px;
+	display: block;
+	margin-top: 0.3em;
+	position: relative;
+	display: inline-block;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/88px-Windows_logo_-_2012.svg.png?20200408080750");  /* fallback for old browsers */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	background-blend-mode: multiply;
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+/* TOOLTIP SECTION */
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+   
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
