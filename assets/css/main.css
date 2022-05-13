@@ -3158,8 +3158,16 @@ input, select, textarea {
     100% {opacity: 0;}
 }
 
+.carousel-caption{
+	transform: scale(0.9);   
+	transition: all 0.3s ease-in;
+	color: rgba(255, 255, 255, 0.3);
+	background: rgba(0, 0, 0, 0);
+}
+
 .carousel-caption p{
 	text-align: center;
+	padding: 0.5em;
 }
 
 .carousel-caption h5 {
@@ -3167,11 +3175,14 @@ input, select, textarea {
 	line-height: 1.25em;
 }
 
-.carousel-caption{
-	transform: scale(0.9);   
+.carousel-caption a{
+	margin: 0 0.3em;
+	color: rgba(0, 0, 0, 0);  /* rende trasparente una cazzo di linetta che si vedeva in basso a destra dei button quando li sfioravi */
 	transition: all 0.3s ease-in;
-	color: rgba(255, 255, 255, 0.3);
-	background: rgba(0, 0, 0, 0);
+}
+
+.carousel-caption p a{
+	color: rgba(255, 166, 0, 0.3);  /* rende trasparente una cazzo di linetta che si vedeva in basso a destra dei button quando li sfioravi */
 }
 
 .carousel-caption:hover{
@@ -3182,16 +3193,29 @@ input, select, textarea {
 	background: rgba(0, 0, 0, 0.45);
 }
 
-.glass {
-    background-color: #000000;  /* fallback for old browsers */
-	background-image: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-	background-image: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.carousel-caption:hover p a{
+    color: orange;    
+    transition: all 0.3s ease-in;
+}
+
+.carousel-caption .glass {
+    background-color: #000000; 
+	background-image: -webkit-linear-gradient(to right, #434343, #000000);
+	background-image: linear-gradient(to right, #434343, #000000);
 	border-radius: 13%;
+
+	opacity: 0.3;
+  	transition: opacity 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.carousel-caption:hover .glass {
+	opacity: 1;
 }
 
 .windows {
 	/* background styles */
-	padding: 35px 75px;
+	padding: 25px 50px;
 	display: block;
 	margin-top: 0.3em;
 	position: relative;
@@ -3201,6 +3225,7 @@ input, select, textarea {
 	background-position: center;
 	background-size: 40%;
 	background-blend-mode: multiply;
+
 	/* text styles */
 	text-decoration: none;
 	color: #fff;
@@ -3209,21 +3234,97 @@ input, select, textarea {
 	font-weight: 100;
 }
 
+.apple {
+	/* background styles */
+	padding: 25px 50px;
+	display: block;
+	margin-top: 0.3em;
+	position: relative;
+	display: inline-block;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Icon-Mac.svg/256px-Icon-Mac.svg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	background-blend-mode: multiply;
+
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.linux {
+	/* background styles */
+	padding: 25px 50px;
+	display: block;
+	margin-top: 0.3em;
+	position: relative;
+	display: inline-block;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/506px-Tux.svg.png?20220320193426");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	background-blend-mode: multiply;
+
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.carousel-caption .itch {
+	/* background styles */
+	transition: all 0.3s ease-in;
+	padding: 36px 120px;
+	display: block;
+	position: relative;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, #ffffff27, #00000027), url("https://alejandrocoria.games/images/projects/play_on_itchio.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 114%;
+	border-radius: 12px;
+	background-blend-mode: normal;
+
+	opacity: 0.3;
+  	transition: opacity 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.carousel-caption:hover .itch {
+	opacity: 1;
+}
+
+.itch:hover {
+	/* background styles */
+	transition: all 0.3s ease-in;
+	background-image: linear-gradient(to bottom, #ffffffb0, #00000057), url("https://alejandrocoria.games/images/projects/play_on_itchio.png");
+}
+
+.itch:active {
+	background-image: linear-gradient(to top, #ffffff27, #00000027), url("https://alejandrocoria.games/images/projects/play_on_itchio.png");
+}
+
 /* TOOLTIP SECTION */
   .glass .tooltiptext {
-	transform: scale(0.5);    
-    transition: all 0.3s ease-in;
 	visibility: hidden;
 	width: 120px;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 5px 0;
 	border-radius: 6px;
+	opacity: 0;
+  	transition: opacity 0.3s;
+	transition-timing-function: ease-in;
 
-	bottom: 72.5%;
-	left: 50%;
-	margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+	bottom: 50.5%;
+	left: inherit;
+	margin-left: -110px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
 	font-size: x-small;
 	vertical-align: middle;
@@ -3235,9 +3336,7 @@ input, select, textarea {
   
   /* Show the tooltip text when you mouse over the tooltip container */
   .glass:hover .tooltiptext {
-	transform: scale(1);    
-    transition: all 0.4s ease-in;
-	background-color: rgb(255, 255, 255);
+	opacity: 1;
 	visibility: visible;
   }
 
