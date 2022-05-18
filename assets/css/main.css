@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f4f4;
+		background: #131313;
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -210,7 +210,7 @@ input, select, textarea {
 			display: block;
 			width: 1px;
 			height: 21px;
-			background: rgba(128, 128, 128, 0.2);
+			background: rgba(19, 19, 19, 0.2);
 		}
 
 		hr:before {
@@ -1888,7 +1888,7 @@ input, select, textarea {
 
 	ul.icons {
 		position: relative;
-		background: rgba(128, 128, 128, 0.05);
+		background: rgba(19, 19, 19, 0.05);
 		border-radius: 4em;
 		display: inline-block;
 		padding: 0.35em 0.75em 0.35em 0.75em;
@@ -1935,7 +1935,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
-		background: #fafafa;
+		background: rgba(19, 19, 19, 0.05);
 		width: 100%;
 		border-radius: 0.5em;
 		border: solid 1px #E5E5E5;
@@ -1951,7 +1951,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #fff;
+			background: rgba(19, 19, 19, 0.05);
 			border-color: #df7366;
 		}
 
@@ -2005,7 +2005,7 @@ input, select, textarea {
 				}
 
 				table.default tbody tr:nth-child(2n+1) {
-					background: #fafafa;
+					background: rgba(19, 19, 19, 0.05);
 				}
 
 			table.default td {
@@ -2066,7 +2066,7 @@ input, select, textarea {
 		.icon.circled {
 			position: relative;
 			display: inline-block;
-			background: #2b252c;
+			background: rgba(19, 19, 19, 0.05);
 			color: #fff;
 			border-radius: 100%;
 			width: 3em;
@@ -2200,7 +2200,7 @@ input, select, textarea {
 		}
 
 			#header hr:before, #header hr:after {
-				background: rgba(192, 192, 192, 0.35);
+				background: rgba(19, 19, 19, 0.05);
 			}
 
 		#header footer {
@@ -2218,7 +2218,9 @@ input, select, textarea {
 
 		body.homepage #header:after {
 			content: '';
-			background: #1C0920;
+			background: #000000;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 			display: block;
 			position: absolute;
 			left: 0;
@@ -2420,8 +2422,10 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
-		background: #2b252c;
+		padding: 2em 0;
+		background: #000000;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to top, rgb(40, 40, 40), #131313);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to top, rgb(40, 40, 40), #131313); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		color: #fff;
 	}
 
@@ -2437,7 +2441,21 @@ input, select, textarea {
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
 			color: rgb(255, 255, 255);
+			font-size: 30px;
+			text-align: center;
+			-webkit-animation: t-glow 1s ease-in-out infinite alternate;
+			-moz-animation: t-glow 1s ease-in-out infinite alternate;
+			animation: t-glow 1s ease-in-out infinite alternate;
 		}
+
+		@-webkit-keyframes t-glow {
+			from {
+			  text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #5171ff, 0 0 13px #5171ff, 0 0 16px #5171ff, 0 0 19px #5171ff, 0 0 25px #5171ff;
+			}
+			to {
+			  text-shadow: 0 0 10px #fff, 0 0 11px #5171ff, 0 0 13px #5171ff, 0 0 16px #5171ff, 0 0 18px #5171ff, 0 0 23px #5171ff, 0 0 30px #5171ff;
+			}
+		  }
 
 		#footer .contact {
 			text-align: center;
@@ -2462,123 +2480,6 @@ input, select, textarea {
 				#footer .copyright a:hover {
 					color: rgba(212, 212, 212, 0.85);
 				}
-
-/* Carousel */
-
-	.carousel {
-		position: relative;
-		overflow: hidden;
-		padding: 2em 0 2em 0;
-		margin-bottom: 0;
-	}
-
-		.carousel .forward, .carousel .backward {
-			position: absolute;
-			top: 50%;
-			width: 6em;
-			height: 12em;
-			margin-top: -6em;
-			cursor: pointer;
-		}
-
-			.carousel .forward:before, .carousel .backward:before {
-				content: '';
-				display: block;
-				width: 6em;
-				height: 6em;
-				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.5);
-				position: absolute;
-				top: 50%;
-				margin-top: -3em;
-				-moz-transition: background-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
-			}
-
-			.carousel .forward:after, .carousel .backward:after {
-				content: '';
-				width: 3em;
-				height: 3em;
-				position: absolute;
-				top: 50%;
-				margin: -1.5em 0 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
-			}
-
-			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
-			}
-
-		.carousel .forward {
-			right: 0;
-		}
-
-			.carousel .forward:before {
-				right: -3em;
-			}
-
-			.carousel .forward:after {
-				right: -0.25em;
-			}
-
-		.carousel .backward {
-			left: 0;
-		}
-
-			.carousel .backward:before {
-				left: -3em;
-			}
-
-			.carousel .backward:after {
-				left: -0.25em;
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-			}
-
-		.carousel .reel {
-			white-space: nowrap;
-			position: relative;
-			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
-		}
-
-		.carousel article {
-			display: inline-block;
-			width: 18em;
-			background: #fff;
-			text-align: center;
-			padding: 0 1em 3em 1em;
-			margin: 0 2em 0 0;
-			white-space: normal;
-			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;
-			-webkit-transition: opacity 0.75s ease-in-out;
-			-ms-transition: opacity 0.75s ease-in-out;
-			transition: opacity 0.75s ease-in-out;
-		}
-
-			.carousel article.loading {
-				opacity: 0;
-			}
-
-			.carousel article .image {
-				position: relative;
-				left: -1em;
-				top: 0;
-				width: auto;
-				margin-right: -2em;
-				margin-bottom: 3em;
-			}
-
-			.carousel article p {
-				text-align: center;
-			}
 
 /* Wide */
 
@@ -2704,10 +2605,6 @@ input, select, textarea {
 
 		/* Basic */
 
-			html, body {
-				overflow-x: hidden;
-			}
-
 			body, input, textarea, select {
 				font-size: 12.5pt;
 				line-height: 1.5em;
@@ -2743,53 +2640,6 @@ input, select, textarea {
 			header > p {
 				font-size: 1.25em;
 			}
-
-		/* Image */
-
-			.image.featured {
-				margin: 0 0 2em 0;
-			}
-
-			.image.left {
-				margin: 0 1em 1em 0;
-			}
-
-			.image.centered {
-				margin: 0 0 1em 0;
-			}
-
-		/* Actions */
-
-			form ul.actions {
-				margin-top: 0;
-			}
-
-			ul.actions li {
-				display: block;
-				margin: 0.75em 0 0 0;
-			}
-
-				ul.actions li:first-child {
-					margin-top: 0;
-				}
-
-		/* Menu */
-
-			ul.menu {
-				height: auto;
-				text-align: center;
-			}
-
-				ul.menu li {
-					display: block;
-					border: 0;
-					padding: 0.75em 0 0 0;
-					margin: 0;
-				}
-
-					ul.menu li:first-child {
-						padding-top: 0;
-					}
 
 		/* Icons */
 
@@ -2855,14 +2705,6 @@ input, select, textarea {
 				body.homepage #header h1 {
 					font-size: 2.5em;
 				}
-
-		/* Footer */
-
-			#footer {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-
 	}
 
 	/* Glowing Button */
@@ -2942,6 +2784,7 @@ input, select, textarea {
 	/* Services Section */
 .services {
     background: #131313;
+	background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3097,10 +2940,11 @@ input, select, textarea {
 .img-size{
 		height: 100%;
 		width: 100%;
-		background-size: cover;
+		background-size: contain;
 		min-width: 1140px;
 		overflow: hidden;
 	}
+
 .modal-content {
 	border:none;
 	width: 100%;
@@ -3213,6 +3057,38 @@ input, select, textarea {
 
 .carousel-caption:hover .glass {
 	opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+	.img-size {
+		min-width: 500px;
+	}
+	.carousel-caption{
+		transform: scale(1);
+		color: rgb(255, 255, 255);
+		background: rgba(0, 0, 0, 0.575);
+	}
+	.carousel-caption:hover {
+		transform: scale(1);
+		color: rgb(255, 255, 255);
+		background: rgba(0, 0, 0, 0.575);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.img-size {
+		min-width: 200px;
+	}
+	.carousel-caption{
+		transform: scale(0.5);
+		color: rgb(255, 255, 255);
+		background: rgba(0, 0, 0, 0.575);
+	}
+	.carousel-caption:hover {
+		transform: scale(0.5);
+		color: rgb(255, 255, 255);
+		background: rgba(0, 0, 0, 0.575);
+	}
 }
 
 .windows {
