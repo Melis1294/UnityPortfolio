@@ -127,6 +127,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.85em;
+		line-height: 1.2em;
 	}
 
 	h3 {
@@ -2585,7 +2586,8 @@ input, select, textarea {
 		/* Carousel */
 
 			.carousel {
-				padding: 1.25em 0 1.25em 0;
+				display: flex;
+				height: 77vh;
 			}
 
 				.carousel article {
@@ -2808,7 +2810,7 @@ input, select, textarea {
 
 .services__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -2860,6 +2862,16 @@ input, select, textarea {
     background-attachment:local;
     background-position: center;    
     background-size: 76rem;
+}
+
+.services__card:nth-child(5) {   
+    background-image: url("../../images/basketballChallenge/7.png");  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to bottom, #dc243000, #7b439700), url("../../images/basketballChallenge/7.png");  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to bottom, #dc243000, #7b439700), url("../../images/basketballChallenge/7.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position: -495px center;
+	background-size: 76rem;   
 }
 
 .services__card h2 {
@@ -2924,6 +2936,12 @@ input, select, textarea {
     background-image: linear-gradient(to bottom, #dc24304f, #7b43974f), url("../../images/facebookGame/3.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#img__card--5:hover {
+    background-image: #7b43974f;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to bottom, #dc24304f, #7b43974f), url("../../images/basketballChallenge/7.png");  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to bottom, #dc24304f, #7b43974f), url("../../images/basketballChallenge/7.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 @media screen and (max-width: 1300px) {
     .services__wrapper {
         grid-template-columns: 1fr 1fr;
@@ -2934,6 +2952,20 @@ input, select, textarea {
     .services__wrapper {
         grid-template-columns: 1fr;
     }
+
+	#banner {
+		text-align: center;
+		padding: 0 3em;
+		margin-bottom: 0;
+		color: white;
+	}
+
+	#banner > header > p {
+		text-align: justify;
+		font-size: 0.9rem;
+		margin: 0;
+		line-height: 1.5em;
+	}
 }
 
 /* Modal Section */
@@ -3005,9 +3037,16 @@ input, select, textarea {
 }
 
 .carousel-caption{
-	transform: scale(0.9);   
+	/* transform: scale(0.9);   
 	transition: all 0.3s ease-in;
 	color: rgba(255, 255, 255, 0.3);
+	background: rgba(0, 0, 0, 0); */
+	position: absolute;
+	transform: scale(1);
+	top: 100%;
+	z-index: 1;
+	cursor: pointer;
+	color: rgb(255, 255, 255);
 	background: rgba(0, 0, 0, 0);
 }
 
@@ -3063,11 +3102,19 @@ input, select, textarea {
 	.img-size {
 		min-width: 500px;
 	}
-	.carousel-caption{
-		transform: scale(1);
+	.carousel-caption {
+		/* transform: scale(1);
 		color: rgb(255, 255, 255);
-		background: rgba(0, 0, 0, 0.575);
+		background: rgba(0, 0, 0, 0.575); */
+		position: absolute;
+		transform: scale(1);
+		top: 100%;
+		z-index: 1;
+		cursor: pointer;
+		color: rgb(255, 255, 255);
+		background: rgba(0, 0, 0, 0);
 	}
+
 	.carousel-caption:hover {
 		transform: scale(1);
 		color: rgb(255, 255, 255);
@@ -3077,17 +3124,7 @@ input, select, textarea {
 
 @media screen and (max-width: 768px) {
 	.img-size {
-		min-width: 200px;
-	}
-	.carousel-caption{
-		transform: scale(0.5);
-		color: rgb(255, 255, 255);
-		background: rgba(0, 0, 0, 0.575);
-	}
-	.carousel-caption:hover {
-		transform: scale(0.5);
-		color: rgb(255, 255, 255);
-		background: rgba(0, 0, 0, 0.575);
+		min-width: 12.5rem;
 	}
 }
 
