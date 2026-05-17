@@ -1,0 +1,180 @@
+{
+  "projects": [
+    {
+      "title": "Math Dungeon",
+      "year": 2016,
+      "slides": [
+        {
+          "title": "Math Dungeon",
+          "image": "images/mathDungeon/screen-7.jpg",
+          "description": "\"The math was stolen and a brave explorer must dive into a mysterious adventure to recover it\". Math Dungeon was my first experience with videogames development. It all started when I joined a small team during a game jam and that team later became a startup named NapsyGames!"
+        },
+        {
+          "title": "3D Art",
+          "image": "images/mathDungeon/screen-2.jpg",
+          "description": "My main role in the team was the 3D Artist. Indeed I made the 3D models, the textures and many of the animations seen in the game. Our goal was to develop a mobile game for children to learn maths more easily."
+        },
+        {
+          "title": "Growth",
+          "image": "images/mathDungeon/screen-3.jpg",
+          "description": "The fact that it was my first experience, it taught me very much. Firstly, it improved my 3D animation and 3D modeling skills, e.g.: by paying attention at keeping a number of polygons lower than a certain limit, but it also improved my team work. Working in a team is not easy: many tasks to synchronize and deadlines to respect, so it gave me the first taste of that reality."
+        },
+        {
+          "title": "A hard lesson",
+          "image": "images/mathDungeon/screen-4.jpg",
+          "description": "Even though we were a group of young and talented guys, unfortunately the startup did not last very much and we had to split up. But this event did not stop my will to become a game developer and I made a treasure of the experience that this journey helped me to develop."
+        },
+        {
+          "title": "Download the game!",
+          "image": "images/mathDungeon/screen-6.jpg",
+          "description": "If you would like to try the game, here are the download links! Enjoy :)",
+          "links": {
+            "windows": "http://napsygames.com/MathDungeon_v1.8.2.msi",
+            "mac": "http://itunes.apple.com/it/app/mathdungeon/id1289885934?mt=12",
+            "linux": "http://napsygames.com/MathDungeon_v1.8.2.tar.gz"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Martian Wave",
+      "year": 2017,
+      "slides": [
+        {
+          "title": "Global Game Jam",
+          "image": "images/martianWave/1.jpg",
+          "description": "During the 2017 Global Game Jam I joined a team of young students with one of the NapsyGames team members. The theme of the jam was the waves. So, after the brainstorming we focused on developing a cartoonish game set in the deep sea of Mars."
+        },
+        {
+          "title": "3D Artist",
+          "image": "images/martianWave/2.jpg",
+          "description": "My role was focused again on game art. So I developed the 3D models of the characters and of the props, based on the artworks provided by the 2D artists."
+        },
+        {
+          "title": "48 hours of passion",
+          "image": "images/martianWave/3.jpg",
+          "description": "We worked also during the night, putting our best efforts on the creation. I improved my former skills but also the understanding of the export of .fbx files from the 3D modeling tools to Unity engine. Furthermore, I got better in adjusting the exported animations and in dividing each one from the others."
+        },
+        {
+          "title": "Very good but not perfect",
+          "image": "images/martianWave/4.jpg",
+          "description": "We did not win the jam, the judges said the game had 2D and 3D elements that did not come along well together and that the mechanics were hard to manage. We did not care very much about the loss because we were happy about the experience. Just the fact of joining was enough for us. This event helped me refine my skills to help the NapsyGames team as well in the future."
+        },
+        {
+          "title": "Try the game!",
+          "image": "images/martianWave/5.jpg",
+          "description": "Would you like to see how it feels shooting villains on Mars? Then click the button and play it online!",
+          "links": {
+            "itch": "https://moonlitchameleon.itch.io/martianwave"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Pompeii: a VR experience",
+      "year": 2020,
+      "slides": [
+        {
+          "title": "Live the fall of Pompeii",
+          "image": "images/pompeiiVr/2.png",
+          "description": "Pompeii, 79d.C.: the beginning of the end. Live again the faith of Pompeii in the clothes of the ancient romans, to view the event through the different layers of society. This work was the result of the project I developed with my university colleagues in the course Virtual Reality during my Master's Degree."
+        },
+        {
+          "title": "Not only 3D art",
+          "image": "images/pompeiiVr/4.png",
+          "description": "This time my role was not limited to 3D art. Indeed I learned Unity academically, so I understood the basics of the tool, the programming through C# but I learned how to create the particle system, the lighting system and the shaders too."
+        },
+        {
+          "title": "Modularity",
+          "image": "images/pompeiiVr/5.jpg",
+          "description": "The city was made of modular pieces. Indeed I made the roman insulas, from the most important pieces and then built them in the engine, in some cases manually while in others we used algorithms."
+        },
+        {
+          "title": "The lighting system",
+          "image": "images/pompeiiVr/6.jpg",
+          "description": "The city was planned to have a majestic look by night. Indeed, the torches and the fire were positioned around the walls in such a way to create a unique mystical look."
+        },
+        {
+          "title": "Particle system",
+          "image": "images/pompeiiVr/7.jpg",
+          "description": "As stated before, I learned how to create the particle system but also the shaders through the Shader Graph editor. For example, I developed the fireballs system, from the particles, to the generation until the hit system, when they fell near the main character. Inside the Shader Graph I made the animation of the lava in the ball."
+        },
+        {
+          "title": "Just like in Michael Bay movies",
+          "image": "images/pompeiiVr/8.jpg",
+          "description": "Move inside a roman domus, seeking for salvation before the Vesuvius ends it all. I learned how to trigger special events, like explosions or mission updates. This was important to thrill the player and immerse him more but also to give the demo a proper spectacular ending."
+        },
+        {
+          "title": "Roman pedestrians",
+          "image": "images/pompeiiVr/9.jpg",
+          "description": "I also learned indirectly by helping my colleagues. One of them developed the navigation system and the other one the dialogs system. While another one developed a diegetic map, with player indicator, to orientate through the city. I learned through their experience how the process worked and how to implement it."
+        },
+        {
+          "title": "Try the game!",
+          "image": "images/pompeiiVr/11.jpg",
+          "description": "Would you like to run away from fireballs and collapsing buildings to save yourself from an erupting Volcano? Then click the button and download the game!",
+          "links": {
+            "itch": "https://wefranck.itch.io/pompeiivr"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Facebook Metaverse",
+      "year": 2021,
+      "slides": [
+        {
+          "title": "Thesis project",
+          "image": "images/facebookGame/1.png",
+          "description": "The following project was developed during my stage at the IT company: Orbyta. The goal of thesis was the creation of a networking platform on Unity that hosts social features. After a research, I found Facebook as the best candidate for the work."
+        },
+        {
+          "title": "First interaction with APIs",
+          "image": "images/facebookGame/2.png",
+          "description": "Facebook provided its own API that could be attached to Unity through a specific package. I had the chance to learn a range of API calls to start the login process to the social platform and to download and manage the data of the users."
+        },
+        {
+          "title": "A procedural world to explore",
+          "image": "images/facebookGame/4.png",
+          "description": "The thesis offered me the opportunity to focus on how to create a semi-procedural town from the user data. The world had a procedural part made with the houses of the Facebook friends while a semi-static part with a central square to visit, play games or meet other users."
+        },
+        {
+          "title": "Visit your Facebook friends",
+          "image": "images/facebookGame/5.gif",
+          "description": "Each Facebook friend, user included, had their own house in the game world, so you could visit it and interact with their feed on the wall."
+        },
+        {
+          "title": "The square",
+          "image": "images/facebookGame/6.gif",
+          "description": "The square in the middle provided some mini-games like bowling or obstacle course. The last one had competitive feature: indeed, it started a timer to finish the race and at the end it was displayed on a big leaderboard, to all the players."
+        },
+        {
+          "title": "Mirror Networking",
+          "image": "images/facebookGame/7.gif",
+          "description": "All of the online features were provided by Mirror Networking: a high level Networking API for Unity that provides different levels of transport. In this case it was used TCP on a specific port. Besides, the host was run on a Windows Server, on EC2 virtual machine, using Amazon Web Services. The players could connect via smartphone to the world, logging in with their Facebook account."
+        }
+      ]
+    },
+    {
+      "title": "Basketball Challenge",
+      "year": 2026,
+      "slides": [
+        {
+          "title": "Thesis project",
+          "image": "images/basketballChallenge/8.png",
+          "description": "The following project was developed during my stage at the IT company: Orbyta. The goal of thesis was the creation of a networking platform on Unity that hosts social features. After a research, I found Facebook as the best candidate for the work."
+        },
+        {
+          "title": "First interaction with APIs",
+          "image": "images/basketballChallenge/9.png",
+          "description": "Facebook provided its own API that could be attached to Unity through a specific package. I had the chance to learn a range of API calls to start the login process to the social platform and to download and manage the data of the users."
+        },
+        {
+          "title": "A procedural world to explore",
+          "image": "images/basketballChallenge/7.png",
+          "description": "The thesis offered me the opportunity to focus on how to create a semi-procedural town from the user data. The world had a procedural part made with the houses of the Facebook friends while a semi-static part with a central square to visit, play games or meet other users."
+        }
+      ]
+    }
+  ]
+}
